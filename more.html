@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBEBirr Plus - More</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* Same variables and styles as previous pages */
+:root {  --cbe-primary: #8d288e;
+    --cbe-secondary: #822787; --cbe-success:#70e000; --cbe-warning:#ffc107; --cbe-background:#edf6f9; --cbe-text-dark:#2a324b; --cbe-text-light:#6a7495; --radius-l:20px; --radius-m:12px; --shadow-soft:0 6px 15px rgba(0,0,0,0.08); --shadow-card:0 4px 10px rgba(0,0,0,0.05); }
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;}
+body{background-color:var(--cbe-background);color:var(--cbe-text-dark);line-height:1.5;padding-bottom:90px;}
+.container{max-width:450px;margin:0 auto;min-height:100vh;}
+header{background:linear-gradient(135deg,var(--cbe-primary),var(--cbe-secondary));color:white;padding:25px 20px;border-bottom-left-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l);box-shadow:0 4px 10px rgba(0,119,182,0.3);margin-bottom:20px;}
+.header-content{display:flex;justify-content:space-between;align-items:center;}
+.logo{font-size:1.25em;font-weight:700;}
+.logo i{margin-right:8px;opacity:0.8;}
+.user-actions i{font-size:1.4em;opacity:0.9;cursor:pointer;}
+.section-title{margin:20px 20px 15px;}
+.section-title h2{font-size:1.3em;font-weight:700;color:var(--cbe-text-dark);border-left:4px solid var(--cbe-primary);padding-left:10px;line-height:1;}
+.more-card{background:white;padding:20px;margin:0 20px 15px;border-radius:var(--radius-m);box-shadow:var(--shadow-card);transition:transform 0.2s;border:1px solid #e0e6f0;}
+.more-card:hover{transform:translateY(-2px);box-shadow:0 6px 15px rgba(0,0,0,0.1);}
+.more-header{display:flex;align-items:center;margin-bottom:15px;}
+.more-icon{width:45px;height:45px;line-height:45px;text-align:center;border-radius:50%;margin-right:15px;font-size:1.2em;color:white;background-color:var(--cbe-secondary);}
+.more-card:nth-of-type(1) .more-icon{background-color:var(--cbe-primary);}
+.more-card:nth-of-type(2) .more-icon{background-color:var(--cbe-success);}
+.more-card:nth-of-type(3) .more-icon{background-color:var(--cbe-warning);}
+.more-title{font-size:1.1em;font-weight:600;color:var(--cbe-text-dark);}
+.more-content{font-size:0.9em;color:var(--cbe-text-light);margin-bottom:15px;padding-left:60px;}
+.more-cta{display:inline-block;font-size:0.9em;font-weight:600;color:var(--cbe-primary);text-decoration:none;border-bottom:2px solid var(--cbe-primary);padding-bottom:2px;transition:opacity 0.2s;margin-left:60px;}
+.more-cta:hover{opacity:0.8;}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;display:flex;align-items:center;background-color:white;box-shadow:0 -4px 15px rgba(0,0,0,0.1);height:80px;max-width:450px;margin:0 auto;z-index:1000;border-top-left-radius:var(--radius-l);border-top-right-radius:var(--radius-l);}
+.nav-item{flex:1;text-align:center;color:var(--cbe-text-light);text-decoration:none;display:flex;flex-direction:column;align-items:center;padding:10px 0;font-size:0.9em;transition:color 0.2s;}
+.nav-item:hover,.nav-item.active{color:var(--cbe-primary);}
+.nav-icon{font-size:1.2em;margin-bottom:2px;}
+.nav-label{font-size:0.7em;font-weight:500;}
+.nav-center-button{position:relative;top:-20px;width:65px;height:65px;border-radius:50%;background:linear-gradient(45deg,var(--cbe-secondary),var(--cbe-primary));color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;box-shadow:0 8px 20px rgba(0,119,182,0.6);transition:all 0.2s ease-in-out;}
+.nav-center-button .nav-label{display:none;}
+.nav-center-button:hover{transform:scale(1.05);}
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-content">
+            <div class="logo"><i class="fas fa-ellipsis-h"></i> More</div>
+            <div class="user-actions"><i class="fas fa-search"></i></div>
+        </div>
+    </header>
+
+    <div class="section-title"><h2>Options & Settings</h2></div>
+
+    <div class="more-card">
+        <div class="more-header">
+            <div class="more-icon"><i class="fas fa-cog"></i></div>
+            <div class="more-title">Settings</div>
+        </div>
+        <div class="more-content">Manage your account preferences, security, and app settings.</div>
+        <a href="#" class="more-cta">Open Settings</a>
+    </div>
+
+    <div class="more-card">
+        <div class="more-header">
+            <div class="more-icon"><i class="fas fa-headset"></i></div>
+            <div class="more-title">Support</div>
+        </div>
+        <div class="more-content">Contact customer support or find answers in the FAQ section.</div>
+        <a href="#" class="more-cta">Get Help</a>
+    </div>
+
+    <div class="more-card">
+        <div class="more-header">
+            <div class="more-icon"><i class="fas fa-gift"></i></div>
+            <div class="more-title">Offers & Promotions</div>
+        </div>
+        <div class="more-content">Check out exclusive deals and promotions available to you.</div>
+        <a href="#" class="more-cta">View Offers</a>
+    </div>
+</div>
+
+<div class="bottom-nav">
+    <a href="home.html" class="nav-item"><i class="fas fa-home nav-icon"></i><span class="nav-label">Home</span></a>
+    <a href="foryou.html" class="nav-item"><i class="fas fa-user-friends nav-icon"></i><span class="nav-label">For You</span></a>
+    <a href="pay.html" class="nav-item nav-center-button"><i class="fas fa-file-invoice-dollar nav-icon"></i><span class="nav-label">Pay</span></a>
+    <a href="cbebeje.html" class="nav-item"><i class="fas fa-piggy-bank nav-icon"></i><span class="nav-label">CBEBeje</span></a>
+    <a href="more.html" class="nav-item active"><i class="fas fa-ellipsis-h nav-icon"></i><span class="nav-label">More</span></a>
+</div>
+</body>
+</html>
